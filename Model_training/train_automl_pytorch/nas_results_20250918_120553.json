@@ -1,0 +1,329 @@
+[
+  {
+    "config": {
+      "num_conv_blocks": 4,
+      "filters_multiplier": 4,
+      "kernel_sizes": [
+        3,
+        3,
+        5,
+        3
+      ],
+      "use_batch_norm": false,
+      "conv_dropout": 0.1,
+      "dense_units": [
+        256,
+        128
+      ],
+      "dense_dropout": 0.5,
+      "learning_rate": 0.0001
+    },
+    "val_accuracy": 99.04,
+    "total_time": 3533.8230240345,
+    "avg_epoch_time": 235.5869457244873
+  },
+  {
+    "config": {
+      "num_conv_blocks": 3,
+      "filters_multiplier": 1,
+      "kernel_sizes": [
+        3,
+        3,
+        5,
+        3
+      ],
+      "use_batch_norm": false,
+      "conv_dropout": 0.2,
+      "dense_units": [
+        256,
+        128
+      ],
+      "dense_dropout": 0.5,
+      "learning_rate": 0.0001
+    },
+    "val_accuracy": 97.6,
+    "total_time": 2568.9459176063538,
+    "avg_epoch_time": 171.26256890296935
+  },
+  {
+    "config": {
+      "num_conv_blocks": 3,
+      "filters_multiplier": 1,
+      "kernel_sizes": [
+        3,
+        3,
+        5,
+        3
+      ],
+      "use_batch_norm": false,
+      "conv_dropout": 0.2,
+      "dense_units": [
+        512
+      ],
+      "dense_dropout": 0.3,
+      "learning_rate": 0.0001
+    },
+    "val_accuracy": 97.56,
+    "total_time": 2543.993536710739,
+    "avg_epoch_time": 169.5992697874705
+  },
+  {
+    "config": {
+      "num_conv_blocks": 5,
+      "filters_multiplier": 2,
+      "kernel_sizes": [
+        5,
+        3,
+        5
+      ],
+      "use_batch_norm": false,
+      "conv_dropout": 0.1,
+      "dense_units": [
+        256,
+        128
+      ],
+      "dense_dropout": 0.4,
+      "learning_rate": 0.001
+    },
+    "val_accuracy": 97.5,
+    "total_time": 2581.9592275619507,
+    "avg_epoch_time": 172.13005743026733
+  },
+  {
+    "config": {
+      "num_conv_blocks": 5,
+      "filters_multiplier": 4,
+      "kernel_sizes": [
+        3,
+        3,
+        5,
+        3
+      ],
+      "use_batch_norm": true,
+      "conv_dropout": 0.2,
+      "dense_units": [
+        512
+      ],
+      "dense_dropout": 0.3,
+      "learning_rate": 0.001
+    },
+    "val_accuracy": 97.44,
+    "total_time": 5096.979712724686,
+    "avg_epoch_time": 339.79814964930216
+  },
+  {
+    "config": {
+      "num_conv_blocks": 4,
+      "filters_multiplier": 4,
+      "kernel_sizes": [
+        3,
+        3,
+        3
+      ],
+      "use_batch_norm": false,
+      "conv_dropout": 0.1,
+      "dense_units": [
+        512
+      ],
+      "dense_dropout": 0.5,
+      "learning_rate": 1e-05
+    },
+    "val_accuracy": 97.12,
+    "total_time": 3354.4535808563232,
+    "avg_epoch_time": 223.62978256543477
+  },
+  {
+    "config": {
+      "num_conv_blocks": 5,
+      "filters_multiplier": 4,
+      "kernel_sizes": [
+        5,
+        3,
+        5
+      ],
+      "use_batch_norm": true,
+      "conv_dropout": 0.3,
+      "dense_units": [
+        256
+      ],
+      "dense_dropout": 0.4,
+      "learning_rate": 1e-05
+    },
+    "val_accuracy": 96.68,
+    "total_time": 4075.729923725128,
+    "avg_epoch_time": 271.7153282483419
+  },
+  {
+    "config": {
+      "num_conv_blocks": 3,
+      "filters_multiplier": 1,
+      "kernel_sizes": [
+        3,
+        3,
+        3
+      ],
+      "use_batch_norm": false,
+      "conv_dropout": 0.2,
+      "dense_units": [
+        512
+      ],
+      "dense_dropout": 0.3,
+      "learning_rate": 0.001
+    },
+    "val_accuracy": 96.56,
+    "total_time": 2582.182991027832,
+    "avg_epoch_time": 172.1455327351888
+  },
+  {
+    "config": {
+      "num_conv_blocks": 4,
+      "filters_multiplier": 4,
+      "kernel_sizes": [
+        3,
+        5,
+        3
+      ],
+      "use_batch_norm": true,
+      "conv_dropout": 0.1,
+      "dense_units": [
+        256,
+        128
+      ],
+      "dense_dropout": 0.4,
+      "learning_rate": 0.001
+    },
+    "val_accuracy": 96.32,
+    "total_time": 3591.91694521904,
+    "avg_epoch_time": 239.4598062356313
+  },
+  {
+    "config": {
+      "num_conv_blocks": 4,
+      "filters_multiplier": 1,
+      "kernel_sizes": [
+        5,
+        3,
+        5
+      ],
+      "use_batch_norm": true,
+      "conv_dropout": 0.1,
+      "dense_units": [
+        512
+      ],
+      "dense_dropout": 0.5,
+      "learning_rate": 1e-05
+    },
+    "val_accuracy": 94.98,
+    "total_time": 2526.138608932495,
+    "avg_epoch_time": 168.40876514116923
+  },
+  {
+    "config": {
+      "num_conv_blocks": 3,
+      "filters_multiplier": 2,
+      "kernel_sizes": [
+        3,
+        3,
+        3
+      ],
+      "use_batch_norm": false,
+      "conv_dropout": 0.2,
+      "dense_units": [
+        512
+      ],
+      "dense_dropout": 0.3,
+      "learning_rate": 1e-05
+    },
+    "val_accuracy": 93.08,
+    "total_time": 2576.319023370743,
+    "avg_epoch_time": 171.7541631380717
+  },
+  {
+    "config": {
+      "num_conv_blocks": 3,
+      "filters_multiplier": 4,
+      "kernel_sizes": [
+        3,
+        5,
+        5,
+        3
+      ],
+      "use_batch_norm": true,
+      "conv_dropout": 0.3,
+      "dense_units": [
+        256
+      ],
+      "dense_dropout": 0.3,
+      "learning_rate": 0.001
+    },
+    "val_accuracy": 92.78,
+    "total_time": 3959.5440690517426,
+    "avg_epoch_time": 263.9678787231445
+  },
+  {
+    "config": {
+      "num_conv_blocks": 5,
+      "filters_multiplier": 1,
+      "kernel_sizes": [
+        3,
+        3,
+        3
+      ],
+      "use_batch_norm": false,
+      "conv_dropout": 0.1,
+      "dense_units": [
+        256,
+        128
+      ],
+      "dense_dropout": 0.3,
+      "learning_rate": 1e-05
+    },
+    "val_accuracy": 90.68,
+    "total_time": 2634.8417568206787,
+    "avg_epoch_time": 175.6556441942851
+  },
+  {
+    "config": {
+      "num_conv_blocks": 3,
+      "filters_multiplier": 1,
+      "kernel_sizes": [
+        3,
+        5,
+        3
+      ],
+      "use_batch_norm": true,
+      "conv_dropout": 0.3,
+      "dense_units": [
+        256,
+        128
+      ],
+      "dense_dropout": 0.5,
+      "learning_rate": 1e-05
+    },
+    "val_accuracy": 85.48,
+    "total_time": 2643.624691724777,
+    "avg_epoch_time": 176.24148979187012
+  },
+  {
+    "config": {
+      "num_conv_blocks": 4,
+      "filters_multiplier": 1,
+      "kernel_sizes": [
+        5,
+        3,
+        5
+      ],
+      "use_batch_norm": true,
+      "conv_dropout": 0.3,
+      "dense_units": [
+        256,
+        128
+      ],
+      "dense_dropout": 0.5,
+      "learning_rate": 1e-05
+    },
+    "val_accuracy": 73.94,
+    "total_time": 2628.5153365135193,
+    "avg_epoch_time": 175.2330505688985
+  }
+]

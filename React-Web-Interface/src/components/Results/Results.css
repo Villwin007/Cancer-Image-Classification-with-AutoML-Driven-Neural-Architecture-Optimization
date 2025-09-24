@@ -1,0 +1,238 @@
+.results {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.results h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 2rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.results-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.confidence-meter {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+}
+
+.confidence-meter h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.meter-bar {
+  height: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2ecc71, #3498db);
+  transition: width 1s ease-in-out;
+  border-radius: 12px;
+}
+
+.meter-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.diagnosis {
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #3498db;
+}
+
+.diagnosis h3 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.diagnosis-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.diagnosis-text.benign {
+  color: #2ecc71;
+}
+
+.diagnosis-text.cancerous {
+  color: #e74c3c;
+}
+
+.predictions {
+  margin-bottom: 3rem;
+}
+
+.predictions h3 {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.prediction-bars {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.prediction-item {
+  margin-bottom: 1.5rem;
+}
+
+.prediction-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.prediction-bar {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.prediction-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  transition: width 1s ease-in-out;
+  border-radius: 6px;
+}
+
+.results-actions {
+  text-align: center;
+}
+
+.new-analysis-btn {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  border: none;
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3);
+}
+
+.new-analysis-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(231, 76, 60, 0.4);
+}
+
+@media (max-width: 768px) {
+  .results {
+    padding: 3rem 0;
+    min-height: auto;
+  }
+  
+  .results h2 {
+    font-size: 2rem;
+  }
+  
+  .results-content {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+  
+  .confidence-meter, .diagnosis, .prediction-bars {
+    padding: 1.5rem;
+  }
+  
+  .diagnosis-text {
+    font-size: 1.1rem;
+  }
+  
+  .prediction-label {
+    font-size: 1rem;
+  }
+}
+
+.model-badge {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.model-badge span {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}

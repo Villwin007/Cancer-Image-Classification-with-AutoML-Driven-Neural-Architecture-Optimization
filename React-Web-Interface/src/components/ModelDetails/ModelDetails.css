@@ -1,0 +1,163 @@
+.model-details {
+  padding: 5rem 0;
+  background: white;
+  width: 100%;
+}
+
+.model-details h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #2c3e50;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.architecture, .training-process, .performance {
+  background: #f8f9fa;
+  padding: 3rem;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.architecture:hover, .training-process:hover, .performance:hover {
+  transform: translateY(-3px);
+}
+
+.architecture h3, .training-process h3, .performance h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.architecture p, .training-process p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.architecture-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.arch-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.arch-section h4 {
+  margin-top: 0;
+  color: #3498db;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.arch-section ul {
+  padding-left: 1.2rem;
+}
+
+.arch-section li {
+  margin-bottom: 0.8rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.phase {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.phase h4 {
+  margin-top: 0;
+  color: #3498db;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.phase ul {
+  padding-left: 1.2rem;
+}
+
+.phase li {
+  margin-bottom: 0.8rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.metric {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 2.5rem 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.metric:hover {
+  transform: translateY(-5px);
+}
+
+.metric h4 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.metric p {
+  margin: 0.8rem 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .model-details {
+    padding: 3rem 0;
+  }
+  
+  .model-details h2 {
+    font-size: 2rem;
+  }
+  
+  .architecture, .training-process, .performance {
+    padding: 2rem;
+  }
+  
+  .architecture-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .metric {
+    padding: 1.5rem 1rem;
+  }
+  
+  .metric h4 {
+    font-size: 2rem;
+  }
+}

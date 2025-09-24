@@ -1,0 +1,137 @@
+.explanation-view {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.explanation-view h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.explanation-section {
+  margin-bottom: 2rem;
+}
+
+.explanation-section h4 {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.explanation-text {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #2ecc71;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.heatmap-container {
+  text-align: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.heatmap-image {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.heatmap-legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  color: #2c3e50;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.high-importance {
+  background: linear-gradient(45deg, #ff0000, #ff6b6b);
+}
+
+.medium-importance {
+  background: linear-gradient(45deg, #ffa500, #ffd93d);
+}
+
+.low-importance {
+  background: linear-gradient(45deg, #ffff00, #f6fa7c);
+}
+
+.factors-list {
+  display: grid;
+  gap: 1rem;
+  color: #2c3e50;
+}
+
+.factor-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.factor-icon {
+  font-size: 1.2rem;
+}
+
+.confidence-breakdown {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #3f4750;
+}
+
+.confidence-level {
+  margin: 1rem 0;
+}
+
+.confidence-bar {
+  height: 20px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71, #27ae60);
+  transition: width 1s ease-in-out;
+}
+
+.confidence-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.confidence-description {
+  font-style: italic;
+  color: #555;
+  margin-top: 1rem;
+}

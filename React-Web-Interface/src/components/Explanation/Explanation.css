@@ -1,0 +1,146 @@
+.explanation {
+  padding: 5rem 0;
+  background: #f8f9fa;
+  width: 100%;
+}
+
+.explanation h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #2c3e50;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.explanation-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.explanation-step {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.explanation-step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.explanation-step h3 {
+  color: #2c3e50;
+  margin: 0.5rem 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.explanation-step p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.explanation-step ul {
+  padding-left: 1.5rem;
+}
+
+.explanation-step li {
+  margin-bottom: 0.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.technical-details {
+  background: linear-gradient(135deg, #e8f4fc, #d4e6f1);
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.technical-details h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.detail-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.detail-item:hover {
+  transform: translateY(-3px);
+}
+
+.detail-item h4 {
+  margin: 0 0 1rem;
+  color: #3498db;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.detail-item p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .explanation {
+    padding: 3rem 0;
+  }
+  
+  .explanation h2 {
+    font-size: 2rem;
+  }
+  
+  .explanation-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .explanation-step {
+    padding: 2rem;
+  }
+  
+  .technical-details {
+    padding: 2rem;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}

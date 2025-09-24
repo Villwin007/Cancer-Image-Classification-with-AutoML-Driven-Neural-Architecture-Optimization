@@ -1,0 +1,31 @@
+================================================================================
+CLASSIFICATION REPORT
+================================================================================
+                              precision    recall  f1-score   support
+
+        Colon_Adenocarcinoma       1.00      1.00      1.00      1025
+         Colon_Benign_Tissue       1.00      1.00      1.00      1007
+        Colon_Adenocarcinoma       1.00      1.00      1.00      1025
+         Colon_Benign_Tissue       1.00      1.00      1.00      1007
+         Colon_Benign_Tissue       1.00      1.00      1.00      1007
+          Lung-Benign_Tissue       1.00      1.00      1.00       980
+         Lung_Adenocarcinoma       0.99      0.99      0.99      1009
+         Lung_Adenocarcinoma       0.99      0.99      0.99      1009
+Lung_Squamous_Cell_Carcinoma       0.99      0.99      0.99       979
+
+                    accuracy                           1.00      5000
+                   macro avg       1.00      1.00      1.00      5000
+                   macro avg       1.00      1.00      1.00      5000
+                weighted avg       1.00      1.00      1.00      5000
+
+                weighted avg       1.00      1.00      1.00      5000
+
+Confusion matrix saved as: confusion_matrix_20250918_120553.png
+NAS results saved as: nas_results_20250918_120553.json
+NAS results saved as: nas_results_20250918_120553.json
+
+Total process time: 15.4h
+NAS time: 13.0h
+Final training time: 2.4h
+
+Neural Architecture Search completed successfully!

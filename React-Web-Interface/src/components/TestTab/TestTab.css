@@ -1,0 +1,99 @@
+.test-tab {
+  width: 100%;
+}
+
+.test-tab-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.test-tab-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.test-tab-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .test-tab-header {
+    padding: 2rem 0;
+  }
+  
+  .test-tab-header h2 {
+    font-size: 2rem;
+  }
+  
+  .test-tab-header p {
+    font-size: 1.1rem;
+  }
+}
+
+.test-tab {
+  width: 100%;
+}
+
+.test-tab-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.test-tab-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.test-tab-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.model-badges {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+  .test-tab-header {
+    padding: 2rem 0;
+  }
+  
+  .test-tab-header h2 {
+    font-size: 2rem;
+  }
+  
+  .test-tab-header p {
+    font-size: 1.1rem;
+  }
+  
+  .model-badges {
+    gap: 0.5rem;
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
