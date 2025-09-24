@@ -44,7 +44,7 @@ np.random.seed(42)
 random.seed(42)
 
 # Parameters
-DATASET_DIR = r"E:\MyMLprojects\Capstone-project\MyOwn\Lung_and_Colon_Cancer"
+DATASET_DIR = r"ENTER-PROJECT-DIRECTORY"
 IMG_SIZE = 128
 BATCH_SIZE = 32
 NUM_EPOCHS_NAS = 15  # Shorter epochs for NAS search
